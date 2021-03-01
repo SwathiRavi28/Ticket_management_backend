@@ -26,7 +26,7 @@ mongoose.connection.once('open', () => {
 const ticketsRouter = require('./routes/tickets');
 const usersRouter = require('./routes/users');
 const projectsRouter = require('./routes/projects');
-app.get('/',()=>console.log("launched"))
+//app.get('/',()=>console.log("launched"))
 app.use('/tickets', ticketsRouter);
 app.use('/users', usersRouter);
 app.use('/projects', projectsRouter);
